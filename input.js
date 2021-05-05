@@ -17,10 +17,13 @@ const handleUserInput = function(key) {
   case 'd':
     connection.write('Move: right');
     break;
+  case 'r':
+    connection.write('Say: Beep!');
+    break;
+  case 'e':
+    connection.write('Say: Nom nom');
+    break;
   }
-  // if (key === '\u0003') {
-  //   process.exit();
-  // }
 }
 
 const setupInput = conn => {
