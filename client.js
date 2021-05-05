@@ -12,6 +12,11 @@ const connect = function() {
     console.log(message);
   });
 
+  conn.on('connect', () => {
+    console.log('Successfully connected to game server.');
+    conn.write('Name: MT7');
+  });
+
   return conn;
 };
 
